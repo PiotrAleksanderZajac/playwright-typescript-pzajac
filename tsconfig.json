@@ -1,0 +1,25 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+
+    "types": ["node", "playwright"],
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "tests",
+    "fixtures",
+    "pages",
+    "config",
+    "playwright.config.*"
+  ]
+}
+
