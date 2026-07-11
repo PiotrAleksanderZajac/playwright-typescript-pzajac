@@ -45,4 +45,5 @@ config/stage.ts
 config/prod.ts
 
 Switch environment:
-ENV=stage npx playwright test
+ENV=stage npx playwright test //unix
+$env:ENV='stage'; npx playwright test --list
