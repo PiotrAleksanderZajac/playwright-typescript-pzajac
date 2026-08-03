@@ -72,7 +72,7 @@ If all checks pass, the framework is ready to use.
 
 ```bash
 npm run lint
-npm run format:check
+npm run format:check (in case any format issue fix them using command npm run format )
 npm test
 ```
 
