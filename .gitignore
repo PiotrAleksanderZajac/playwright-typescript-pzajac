@@ -12,7 +12,7 @@ blob-report/
 trace.zip
 *.zip
 
-### Storage state (opcjonalnie) ###
+### Storage state (optional) ###
 storageState*.json
 
 ### TypeScript ###
@@ -31,10 +31,8 @@ out/
 .DS_Store
 Thumbs.db
 
-### VS Code ###
+### IDE ###
 .vscode/
-
-### IntelliJ IDEA ###
 .idea/
 *.iml
 
