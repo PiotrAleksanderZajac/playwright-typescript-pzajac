@@ -18,6 +18,70 @@ Supports **UI tests**, **API tests**, **role‑based authentication**, and **env
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+Before running the framework, make sure you have:
+
+- Node.js 22 LTS (or newer)
+- npm
+- Git
+
+### Clone the repository
+
+```bash
+git clone https://github.com/PiotrAleksanderZajac/playwright-typescript-pzajac.git
+cd playwright-typescript-pzajac
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Install Playwright browsers
+
+```bash
+npx playwright install
+```
+
+> **Note**
+>
+> This step is required after the initial setup and whenever the Playwright version is updated.
+
+### Verify the installation
+
+Run the following commands to verify that everything has been installed correctly:
+
+```bash
+npm run lint
+npm test
+```
+
+If all checks pass, the framework is ready to use.
+
+---
+
+## Development Workflow
+
+1. Create a feature branch.
+2. Make your changes.
+3. Run:
+
+```bash
+npm run lint
+npm run format:check
+npm test
+```
+
+4. Commit your changes.
+5. Open a Pull Request.
+6. Wait for GitHub Actions to complete before merging.
+
+---
+
 ## Running tests
 
 Run all tests:
