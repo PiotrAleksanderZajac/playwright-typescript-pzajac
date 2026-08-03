@@ -1,4 +1,13 @@
-const ENV = process.env.ENV || 'dev';
-const config = require(`./config/${ENV}.ts`).default;
+import dev from './config/dev';
+import stage from './config/stage';
+import prod from './config/prod';
 
-export default config;
+const ENV = process.env.ENV ?? 'dev';
+
+const configs = {
+  dev,
+  stage,
+  prod,
+};
+
+export default configs[ENV as keyof typeof configs];

@@ -5,6 +5,7 @@
 Provide a short summary of the changes.
 
 Example:
+
 - Added LoginPage
 - Added login tests
 - Refactored authentication fixture

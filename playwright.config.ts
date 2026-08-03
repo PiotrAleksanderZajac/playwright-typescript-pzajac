@@ -48,35 +48,35 @@ export default defineConfig({
 
     /* Debug */
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
   projects: [
-  {
-    name: 'admin-chromium',
-    use: { ...devices['Desktop Chrome'], storageState: 'storageState.admin.json' }
-  },
-  {
-    name: 'admin-firefox',
-    use: { ...devices['Desktop Firefox'], storageState: 'storageState.admin.json' }
-  },
-  {
-    name: 'admin-webkit',
-    use: { ...devices['Desktop Safari'], storageState: 'storageState.admin.json' }
-  },
-  {
-    name: 'user-chromium',
-    use: { ...devices['Desktop Chrome'], storageState: 'storageState.user.json' }
-  },
-  {
-    name: 'user-firefox',
-    use: { ...devices['Desktop Firefox'], storageState: 'storageState.user.json' }
-  },
-  {
-    name: 'user-webkit',
-    use: { ...devices['Desktop Safari'], storageState: 'storageState.user.json' }
-  },
+    {
+      name: 'admin-chromium',
+      use: { ...devices['Desktop Chrome'], storageState: 'storageState.admin.json' },
+    },
+    {
+      name: 'admin-firefox',
+      use: { ...devices['Desktop Firefox'], storageState: 'storageState.admin.json' },
+    },
+    {
+      name: 'admin-webkit',
+      use: { ...devices['Desktop Safari'], storageState: 'storageState.admin.json' },
+    },
+    {
+      name: 'user-chromium',
+      use: { ...devices['Desktop Chrome'], storageState: 'storageState.user.json' },
+    },
+    {
+      name: 'user-firefox',
+      use: { ...devices['Desktop Firefox'], storageState: 'storageState.user.json' },
+    },
+    {
+      name: 'user-webkit',
+      use: { ...devices['Desktop Safari'], storageState: 'storageState.user.json' },
+    },
 
     /* Test against mobile viewports. */
     // {

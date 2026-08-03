@@ -19,6 +19,7 @@ Supports **UI tests**, **API tests**, **role‑based authentication**, and **env
 ---
 
 ## Running tests
+
 Run all tests:
 npx playwright test
 
@@ -40,6 +41,7 @@ npm run test:debug
 ---
 
 ## Environments
+
 config/dev.ts
 config/stage.ts
 config/prod.ts
