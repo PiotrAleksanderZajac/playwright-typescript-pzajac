@@ -1,8 +1,7 @@
 import { chromium } from '@playwright/test';
 
 async function globalSetup() {
-
-  console.log("GLOBAL SETUP START");
+  console.log('GLOBAL SETUP START');
 
   // ADMIN LOGIN
   {

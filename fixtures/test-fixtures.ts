@@ -9,7 +9,7 @@ type MyFixtures = {
 
 export const test = base.extend<MyFixtures>({
   ...authFixtures,
-  ...apiFixtures
+  ...apiFixtures,
 });
 
 export const expect = test.expect;
