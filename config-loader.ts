@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 import dev from './config/dev';
 import stage from './config/stage';
 import prod from './config/prod';
