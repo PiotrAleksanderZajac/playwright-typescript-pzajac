@@ -2,16 +2,6 @@ import { defineConfig, devices } from '@playwright/test';
 import envConfig from './config-loader';
 // import globalSetup from './fixtures/global.setup';
 
-const ENV = process.env.ENV || 'dev';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
-
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -54,28 +44,16 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'admin-chromium',
-      use: { ...devices['Desktop Chrome'], storageState: 'storageState.admin.json' },
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
     },
     {
-      name: 'admin-firefox',
-      use: { ...devices['Desktop Firefox'], storageState: 'storageState.admin.json' },
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
     },
     {
-      name: 'admin-webkit',
-      use: { ...devices['Desktop Safari'], storageState: 'storageState.admin.json' },
-    },
-    {
-      name: 'user-chromium',
-      use: { ...devices['Desktop Chrome'], storageState: 'storageState.user.json' },
-    },
-    {
-      name: 'user-firefox',
-      use: { ...devices['Desktop Firefox'], storageState: 'storageState.user.json' },
-    },
-    {
-      name: 'user-webkit',
-      use: { ...devices['Desktop Safari'], storageState: 'storageState.user.json' },
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
     },
 
     /* Test against mobile viewports. */
