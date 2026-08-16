@@ -51,6 +51,15 @@ npx playwright install
 >
 > This step is required after the initial setup and whenever the Playwright version is updated.
 
+### Environment setup
+
+Create a `.env` file in the project root based on `.env.example`:
+
+```env
+KOMUCH_TEST_EMAIL=your_test_email
+KOMUCH_TEST_PASSWORD=your_test_password
+```
+
 ### Verify the installation
 
 Run the following commands to verify that everything has been installed correctly:
