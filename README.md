@@ -53,7 +53,7 @@ npx playwright install
 
 ### Environment setup
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root based on `.env.example`:
 
 ```env
 KOMUCH_TEST_EMAIL=your_test_email
